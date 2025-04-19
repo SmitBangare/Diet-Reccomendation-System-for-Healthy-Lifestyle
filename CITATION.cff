@@ -8,17 +8,15 @@ message: >-
   metadata from this file.
 type: software
 authors:
-  - given-names: Zakaria
-    family-names: Narjis
-    email: zakaria.narjis.97@gmail.com
-    orcid: 'https://orcid.org/0009-0007-7033-4419'
+  - given-names: Smit
+    family-names: Bangare
+    email: smitbangare@gmail.com
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.12507164
     description: >-
-      https://github.com/zakaria-narjis/Diet-Recommendation-System/releases/tag/v1.0.0
+      https://github.com/SmitBangare/Diet-Reccomendation-System-for-Healthy-Lifestyle
 repository-code: >-
-  https://github.com/zakaria-narjis/Diet-Recommendation-System
+  https://github.com/SmitBangare/Diet-Reccomendation-System-for-Healthy-Lifestyle
 url: 'https://diet-recommendation-system.streamlit.app/'
 abstract: >-
   People from all around the world are getting more
