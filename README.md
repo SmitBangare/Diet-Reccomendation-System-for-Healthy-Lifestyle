@@ -1,4 +1,3 @@
-[![DOI](https://zenodo.org/badge/582718021.svg)](https://zenodo.org/doi/10.5281/zenodo.12507163)
 <h1 align="center">Diet Recommendation System</h1>
 <div align= "center"><img src="Assets/logo_img1.jpg" />
   <h4>A diet recommendation web application using content-based approach with Scikit-Learn, FastAPI and Streamlit.</h4>
@@ -95,9 +94,7 @@ PS: You should have docker and docker-compose already installed
 https://diet-recommendation-system.streamlit.app/
 
 ## Citation
-```
 @software{bangare_2024_12507829,
-  author       = {Bangare, Smit},
-  title        = {Diet recommendation system},
-}
-```
+author       = {Bangare, Smit},
+title        = {Diet recommendation system},
+}   
