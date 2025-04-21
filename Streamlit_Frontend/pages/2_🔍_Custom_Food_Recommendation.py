@@ -4,7 +4,7 @@ from ImageFinder.ImageFinder import get_images_links as find_image
 import pandas as pd
 from streamlit_echarts import st_echarts
 
-st.set_page_config(page_title="Custom Food Recommendation", page_icon="🔍",layout="wide")
+st.set_page_config(page_title="Custom Food Recommendation by Smit Bangare", page_icon="🔍",layout="wide")
 nutrition_values=['Calories','FatContent','SaturatedFatContent','CholesterolContent','SodiumContent','CarbohydrateContent','FiberContent','SugarContent','ProteinContent']
 if 'generated' not in st.session_state:
     st.session_state.generated = False
@@ -100,6 +100,7 @@ class Display:
 
 title="<h1 style='text-align: center;'>Custom Food Recommendation</h1>"
 st.markdown(title, unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center;'>Developed by Smit Bangare</h3>", unsafe_allow_html=True)
 
 
 display=Display()

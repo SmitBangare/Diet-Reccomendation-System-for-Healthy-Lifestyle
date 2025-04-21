@@ -5,9 +5,10 @@ from random import uniform as rnd
 from ImageFinder.ImageFinder import get_images_links as find_image
 from streamlit_echarts import st_echarts
 
-st.set_page_config(page_title="Automatic Diet Recommendation", page_icon="💪",layout="wide")
+st.set_page_config(page_title="Diet Recommendation by Smit Bangare", page_icon="💪",layout="wide")
 
-
+st.markdown("<h1 style='text-align: center;'>Diet Recommendation</h1>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center;'>Developed by Smit Bangare</h3>", unsafe_allow_html=True)
 
 nutritions_values=['Calories','FatContent','SaturatedFatContent','CholesterolContent','SodiumContent','CarbohydrateContent','FiberContent','SugarContent','ProteinContent']
 # Streamlit states initialization

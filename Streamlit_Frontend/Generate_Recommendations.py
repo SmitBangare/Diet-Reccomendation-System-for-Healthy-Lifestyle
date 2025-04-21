@@ -1,5 +1,5 @@
-import requests
 import json
+from integrated_model import generate_recommendations
 
 class Generator:
     def __init__(self,nutrition_input:list,ingredients:list=[],params:dict={'n_neighbors':5,'return_distance':False}):
@@ -13,10 +13,20 @@ class Generator:
         self.params=params
 
     def generate(self,):
-        request={
-            'nutrition_input':self.nutrition_input,
-            'ingredients':self.ingredients,
-            'params':self.params
-        }
-        response=requests.post(url='http://backend:8080/predict/',data=json.dumps(request))
-        return response
+        # Use local model instead of API call
+        results = generate_recommendations(
+            nutrition_input=self.nutrition_input,
+            ingredients=self.ingredients,
+            params=self.params
+        )
+        
+        # Create a response-like object to maintain compatibility
+        class MockResponse:
+            def __init__(self, data):
+                self.data = data
+                self.status_code = 200
+                
+            def json(self):
+                return {"output": self.data}
+                
+        return MockResponse(results)

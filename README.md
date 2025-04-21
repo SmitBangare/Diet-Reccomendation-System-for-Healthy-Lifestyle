@@ -5,6 +5,9 @@
 
 # Diet-Recommendation-System
 
+## 🔗 Live Demo
+**Try the live application here:** [Diet Recommendation System](https://diet-reccomendation-system-for-healthy-lifestyle.streamlit.app/Diet_Recommendation)
+
 ## :bookmark_tabs:Table of contents
 * [General info](#general-info)
 * [Development](#development)
@@ -26,11 +29,11 @@ A content-based recommendation engine is a type of recommendation system that us
 * No data from other users is required to start making recommendations.
 * Recommendations are highly relevant to the user.
 * Recommendations are transparent to the user.
-* You avoid the “cold start” problem. 
+* You avoid the "cold start" problem. 
 * Content-based filtering systems are generally easier to create.
 
 ### Challenges of content-based approach
-* There’s a lack of novelty and diversity.
+* There's a lack of novelty and diversity.
 * Scalability is a challenge.
 * Attributes may be incorrect or inconsistent. 
 
@@ -81,6 +84,7 @@ The project is created with:
 ```
 $ git clone https://github.com/SmitBangare/Diet-Reccomendation-System-for-Healthy-Lifestyle
 ```
+
 ### docker-compose
 In the project root run:
 ```
@@ -89,8 +93,16 @@ $ docker-compose up -d --build
 Then open http://localhost:8501 and enjoy :smiley:.
 
 PS: You should have docker and docker-compose already installed
+
+### Use the hosted version on Streamlit Cloud
+
+You can also access the live deployed version here:
+https://diet-reccomendation-system-for-healthy-lifestyle.streamlit.app/Diet_Recommendation
+
 ## Citation
+```
 @software{bangare_2024_12507829,
-author       = {Bangare, Smit},
-title        = {Diet recommendation system},
-}   
+  author       = {Bangare, Smit},
+  title        = {Diet recommendation system},
+}
+```   
